@@ -72,7 +72,7 @@ export default function Page() {
                                     <TypographySmall>50</TypographySmall>
                                 </div>
                                 <div className="flex justify-center">
-                                    <Button size="icon" className="szie-8 bg-green-600 hover:bg-green-600/90">
+                                    <Button size="icon" className="size-8 bg-green-600 hover:bg-green-600/90">
                                         <Check />
                                     </Button>
                                 </div>

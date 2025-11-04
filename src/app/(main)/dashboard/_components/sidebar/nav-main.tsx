@@ -53,6 +53,7 @@ const NavItemExpanded = ({
                             disabled={item.comingSoon}
                             isActive={isActive(item.id, item.subItems)}
                             tooltip={item.title}
+                            className="data-[active=true]:!bg-primary/10 data-[active=true]:!text-primary"
                         >
                             {item.icon && <item.icon />}
                             <span>{item.title}</span>
@@ -65,6 +66,7 @@ const NavItemExpanded = ({
                             aria-disabled={item.comingSoon}
                             isActive={isActive(item.id)}
                             tooltip={item.title}
+                            className="data-[active=true]:!bg-primary/10 data-[active=true]:!text-primary"
                         >
                             <Link href={item.url} target={item.newTab ? "_blank" : undefined}>
                                 {item.icon && <item.icon />}
@@ -127,7 +129,7 @@ const NavItemCollapsed = ({
                             <SidebarMenuSubButton
                                 key={subItem.title}
                                 asChild
-                                className="focus-visible:ring-0"
+                                className="focus-visible:ring-0 data-[active=true]:!bg-primary/10 data-[active=true]:!text-primary"
                                 aria-disabled={subItem.comingSoon}
                                 isActive={isActive(subItem.url)}
                             >
@@ -164,7 +166,7 @@ export function NavMain({ items }: NavMainProps) {
         <>
             {items.map((group) => (
                 <SidebarGroup key={group.id}>
-                    {group.label && <SidebarGroupLabel>{group.label}</SidebarGroupLabel>}
+                    {/* {group.label && <SidebarGroupLabel>{group.label}</SidebarGroupLabel>} */}
                     <SidebarGroupContent className="flex flex-col gap-2">
                         <SidebarMenu>
                             {group.items.map((item) => {
@@ -178,6 +180,7 @@ export function NavMain({ items }: NavMainProps) {
                                                     aria-disabled={item.comingSoon}
                                                     tooltip={item.title}
                                                     isActive={isItemActive(item.id)}
+                                                    className="data-[active=true]:!bg-primary/10 data-[active=true]:!text-primary"
                                                 >
                                                     <Link href={item.url} target={item.newTab ? "_blank" : undefined}>
                                                         {item.icon && <item.icon />}

@@ -72,12 +72,12 @@ export const sidebarItems: NavGroup[] = [
                 url: "/mother/dashboard",
                 icon: LayoutDashboard,
             },
-            {
-                id: "/mother/registration",
-                title: "Registration",
-                url: "/mother/registration",
-                icon: ClipboardPenLine,
-            },
+            // {
+            //     id: "/mother/registration",
+            //     title: "Registration",
+            //     url: "/mother/registration",
+            //     icon: ClipboardPenLine,
+            // },
             {
                 id: "/mother/my-schedule",
                 title: "My Schedule",
@@ -281,31 +281,37 @@ export const sidebarItems: NavGroup[] = [
                 icon: LayoutDashboard,
             },
             {
-                id: "/cho-head/registration",
-                title: "Registration",
-                url: "/cho-head/registration",
-                icon: ChartBar,
-            },
-            {
-                id: "cho-head",
-                title: "Vaccine ",
+                id: "/cho-head/vaccine-approval",
+                title: "Vaccine Approval",
                 url: "/cho-head/vaccine-approval",
                 icon: ReceiptText,
             },
             {
-                id: "cho-head",
-                title: "Reports",
+                id: "/cho-head/data-verification",
+                title: "Data Verification",
+                url: "/cho-head/data-verification",
+                icon: ClipboardCheck,
+            },
+            {
+                id: "/cho-head/city-reports",
+                title: "City Reports",
                 url: "/cho-head/city-reports",
                 icon: ChartColumnBig,
             },
             {
-                id: "cho-head",
+                id: "/cho-head/inventory-oversight",
+                title: "Inventory Oversight",
+                url: "/cho-head/inventory-oversight",
+                icon: Warehouse,
+            },
+            {
+                id: "/cho-head/user-management",
                 title: "Users",
                 url: "/cho-head/user-management",
                 icon: ClipboardList,
             },
             {
-                id: "cho-head",
+                id: "/cho-head/audit-logs",
                 title: "Audit Logs",
                 url: "/cho-head/audit-logs",
                 icon: Logs,
@@ -313,75 +319,4 @@ export const sidebarItems: NavGroup[] = [
             
         ],
     },
-    // {
-    //     id: 2,
-    //     label: "Pages",
-    //     items: [
-    //         {
-    //             title: "Email",
-    //             url: "/dashboard/coming-soon",
-    //             icon: Mail,
-    //             comingSoon: true,
-    //         },
-    //         {
-    //             title: "Chat",
-    //             url: "/dashboard/coming-soon",
-    //             icon: MessageSquare,
-    //             comingSoon: true,
-    //         },
-    //         {
-    //             title: "Calendar",
-    //             url: "/dashboard/coming-soon",
-    //             icon: Calendar,
-    //             comingSoon: true,
-    //         },
-    //         {
-    //             title: "Kanban",
-    //             url: "/dashboard/coming-soon",
-    //             icon: Kanban,
-    //             comingSoon: true,
-    //         },
-    //         {
-    //             title: "Invoice",
-    //             url: "/dashboard/coming-soon",
-    //             icon: ReceiptText,
-    //             comingSoon: true,
-    //         },
-    //         {
-    //             title: "Users",
-    //             url: "/dashboard/coming-soon",
-    //             icon: Users,
-    //             comingSoon: true,
-    //         },
-    //         {
-    //             title: "Roles",
-    //             url: "/dashboard/coming-soon",
-    //             icon: Lock,
-    //             comingSoon: true,
-    //         },
-    //         {
-    //             title: "Authentication",
-    //             url: "/auth",
-    //             icon: Fingerprint,
-    //             subItems: [
-    //                 { title: "Login v1", url: "/auth/v1/login", newTab: true },
-    //                 { title: "Login v2", url: "/auth/v2/login", newTab: true },
-    //                 { title: "Register v1", url: "/auth/v1/register", newTab: true },
-    //                 { title: "Register v2", url: "/auth/v2/register", newTab: true },
-    //             ],
-    //         },
-    //     ],
-    // },
-    // {
-    //     id: 3,
-    //     label: "Misc",
-    //     items: [
-    //         {
-    //             title: "Others",
-    //             url: "/dashboard/coming-soon",
-    //             icon: SquareArrowUpRight,
-    //             comingSoon: true,
-    //         },
-    //     ],
-    // },
 ];

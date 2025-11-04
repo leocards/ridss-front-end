@@ -30,7 +30,7 @@ export default function Page() {
                     </Button>
                 </div>
                 
-                <div className="space-y-5">
+                {/* <div className="space-y-5">
                     <Report1 />
 
                     <div className="grid grid-cols-[repeat(auto-fill,_minmax(20rem,_1fr))] gap-4 ">
@@ -49,7 +49,7 @@ export default function Page() {
                         <Report2 label="11.) No. of infants with low-birth weight (2,500 g) given iron supplementation for four (4) months" />
                         <Report4 label="12.) Anemic children seen" />
                     </div>
-                </div>
+                </div> */}
             </div>
         </div>
     )
