@@ -1,0 +1,82 @@
+import { Card, CardContent } from "@/components/ui/card";
+import { TypographyH3, TypographyLarge, TypographyLead, TypographySmall } from "@/components/ui/typography";
+
+export default function Page() {
+    return (
+        <div className="">
+            <TypographyLarge>Dashboard</TypographyLarge>
+
+            <div className="space-y-7 mt-3">
+                <div className="space-y-3">
+                    <TypographyLead className="text-lg">Child Immunization Status</TypographyLead>
+                    <div className="grid grid-cols-3 gap-3">
+                        <Card className="!p-2 !py-4">
+                            <CardContent className="px-1.5 space-y-2 text-center">
+                                <TypographyH3>3</TypographyH3>
+                                <div className="text-[12px] text-center text-muted-foreground">Needs Immunization</div>
+                            </CardContent>
+                        </Card>
+                        <Card className="!p-2 !py-4">
+                            <CardContent className="px-1.5 space-y-2 text-center">
+                                <TypographyH3>1</TypographyH3>
+                                <div className="text-[12px] text-center text-muted-foreground">This Month Immunization</div>
+                            </CardContent>
+                        </Card>
+                        <Card className="!p-2 !py-4">
+                            <CardContent className="px-1.5 space-y-2 text-center">
+                                <TypographyH3>0</TypographyH3>
+                                <div className="text-[12px] text-center text-muted-foreground">Complete Immunization</div>
+                            </CardContent>
+                        </Card>
+                    </div>
+                </div>
+
+                <div className="space-y-3">
+                    <TypographyLead className="text-lg">Upcoming Schedules</TypographyLead>
+                    <div className="space-y-3">
+                        <Card className="!p-3 relative cursor-pointer hover:dark:bg-zinc-800 transition duration-150">
+                            <span className="rounded-full size-2.5 dark:bg-blue-500 absolute top-3 right-3"></span>
+                            <CardContent className="px-1.5 space-y-2">
+                                <TypographyLarge>Immunization Schedule</TypographyLarge>
+                                <div className="grid">
+                                    <div className="text-[15px] dark:text-zinc-300">
+                                        <div className="line-clamp-1">
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae labore, eaque ea modi officia sed consequatur numquam porro neque velit molestias vel veniam impedit dolorem! Iure reiciendis libero cumque dolorem?
+                                        </div>
+                                    </div>
+                                    <TypographySmall className="text-xs ml-auto mt-3">Just now</TypographySmall>
+                                </div>
+                            </CardContent>
+                        </Card>
+                        <Card className="!p-3 cursor-pointer hover:dark:bg-zinc-800 transition duration-150">
+                            <CardContent className="px-1.5 space-y-2">
+                                <TypographyLarge className="text-muted-foreground">Immunization Schedule</TypographyLarge>
+                                <div className="grid">
+                                    <div className="text-[15px] text-muted-foreground">
+                                        <div className="line-clamp-1">
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae labore, eaque ea modi officia sed consequatur numquam porro neque velit molestias vel veniam impedit dolorem! Iure reiciendis libero cumque dolorem?
+                                        </div>
+                                    </div>
+                                    <TypographySmall className="text-xs ml-auto mt-3 text-muted-foreground">3d</TypographySmall>
+                                </div>
+                            </CardContent>
+                        </Card>
+                        <Card className="!p-3 cursor-pointer hover:dark:bg-zinc-800 transition duration-150">
+                            <CardContent className="px-1.5 space-y-2">
+                                <TypographyLarge className="text-muted-foreground">Immunization Schedule</TypographyLarge>
+                                <div className="grid">
+                                    <div className="text-[15px] text-muted-foreground">
+                                        <div className="line-clamp-1">
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae labore, eaque ea modi officia sed consequatur numquam porro neque velit molestias vel veniam impedit dolorem! Iure reiciendis libero cumque dolorem?
+                                        </div>
+                                    </div>
+                                    <TypographySmall className="text-xs ml-auto mt-3 text-muted-foreground">4w</TypographySmall>
+                                </div>
+                            </CardContent>
+                        </Card>
+                    </div>
+                </div>
+            </div>
+        </div>
+    )
+}
