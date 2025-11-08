@@ -6,6 +6,7 @@ import BarangayCard from "./_components/barangay-card";
 import { Check, Loader, Mars, PillBottle, Syringe, UsersRound, Venus } from "lucide-react";
 import { TooltipComponent } from "@/components/ui/tooltip";
 import VaccinePing from "@/components/ping";
+import BarangayStocks from "./_components/barangay-stocks";
 
 export default function Page() {
     const status: "shortage" | "sufficient" | "excess" | "used" = "sufficient";
@@ -15,28 +16,36 @@ export default function Page() {
             <TypographyLarge>Dashboard</TypographyLarge>
 
             <div className="mt-6">
-                <div className="mb-2 flex items-center gap-3 text-muted-foreground">
-                    <div className="flex items-center gap-1">
-                        <VaccinePing />
-                        <TypographySmall>Sufficient Vaccine</TypographySmall>
+                <div className="space-y-3 mb-6">
+                    <div className="">
+                        <TypographySmall className="text-[15px]">Barangay Stocks Overview</TypographySmall>
                     </div>
-                    <div className="flex items-center gap-1">
-                        <VaccinePing status="shortage" />
-                        <TypographySmall>Sufficient Shortage</TypographySmall>
-                    </div>
-                    <div className="flex items-center gap-1">
-                        <VaccinePing status="excess" />
-                        <TypographySmall>Vaccine excess</TypographySmall>
-                    </div>
-                    <div className="flex items-center gap-1">
-                        <VaccinePing status="used" />
-                        <TypographySmall>Vaccine is used up</TypographySmall>
-                    </div>
+                    
+                    <BarangayStocks />
                 </div>
-                <Card className="grid grid-cols-[repeat(auto-fill,_minmax(16rem,1fr))] gap-3 rounded-md p-3 shadow-xs">
-                    <div className="mb-1">
+
+                <Card className="gap-3 rounded-md p-3 shadow-xs">
+                    <div className="mb-1 w-full">
+                        <div className="mb-2 flex items-center gap-3 text-muted-foreground">
+                            <div className="flex items-center gap-1">
+                                <VaccinePing />
+                                <TypographySmall>Sufficient Vaccine</TypographySmall>
+                            </div>
+                            <div className="flex items-center gap-1">
+                                <VaccinePing status="shortage" />
+                                <TypographySmall>Sufficient Shortage</TypographySmall>
+                            </div>
+                            <div className="flex items-center gap-1">
+                                <VaccinePing status="excess" />
+                                <TypographySmall>Vaccine excess</TypographySmall>
+                            </div>
+                            <div className="flex items-center gap-1">
+                                <VaccinePing status="used" />
+                                <TypographySmall>Vaccine is used up</TypographySmall>
+                            </div>
+                        </div>
                         <TypographySmall className="line-clamp-1 text-base leading-5">
-                            Ongoing Vaccination
+                            Actively Immunizing Barangays
                         </TypographySmall>
                     </div>
 
@@ -136,12 +145,15 @@ export default function Page() {
                         </div>
                     </Card>
 
-                    <BarangayCard status="sufficient" />
-                    <BarangayCard status="sufficient" />
-                    <BarangayCard status="sufficient" />
-                    <BarangayCard status="shortage" />
-                    <BarangayCard status="sufficient" />
-                    <BarangayCard status="sufficient" />
+                    <div className="grid grid-cols-[repeat(auto-fill,_minmax(16rem,1fr))] gap-3">
+                        <BarangayCard status="sufficient" />
+                        <BarangayCard status="sufficient" />
+                        <BarangayCard status="sufficient" />
+                        <BarangayCard status="shortage" />
+                        <BarangayCard status="sufficient" />
+                        <BarangayCard status="sufficient" />
+                    </div>
+
                 </Card>
             </div>
         </div>

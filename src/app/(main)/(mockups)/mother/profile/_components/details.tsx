@@ -40,6 +40,21 @@ export default function ProfileDetails() {
 
                 <Card className="p-3 relative">
                     <CardContent className="px-3">
+                        <Button variant="ghost" className="absolute top-1.5 right-1.5"><PenLine /> Edit</Button>
+                        <TypographySmall className="text-muted-foreground">Father</TypographySmall>
+
+                        <div className="mt-4">
+                            <TypographySmall>Full Name:</TypographySmall> <span className="text-muted-foreground">Johny Doe</span> <br />
+                            <TypographySmall>Gender:</TypographySmall> <span className="text-muted-foreground">Male</span> <br />
+                            <TypographySmall>Date of Birth:</TypographySmall> <span className="text-muted-foreground">March 14, 1985</span> <br />
+                            <TypographySmall>Age:</TypographySmall> <span className="text-muted-foreground">40 years old</span> <br />
+                            <TypographySmall>Occupation:</TypographySmall> <span className="text-muted-foreground">Farmer</span> <br />
+                        </div>
+                    </CardContent>
+                </Card>
+
+                <Card className="p-3 relative">
+                    <CardContent className="px-3">
                         <Button variant="ghost" className="absolute top-1.5 right-1.5"><Plus /> Add Child</Button>
                         <TypographySmall className="text-muted-foreground">Children</TypographySmall>
 

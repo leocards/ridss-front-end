@@ -29,7 +29,6 @@ export default function Page() {
                                 <MenubarItem>Inactivated Polio Vaccine</MenubarItem>
                                 <MenubarItem>Measles - Rubella Vaccine</MenubarItem>
                                 <MenubarItem>Measles - Mumps - Rubella Vaccine</MenubarItem>
-                                <MenubarItem>Other vaccines</MenubarItem>
                             </MenubarContent>
                         </MenubarMenu>
                     </Menubar>

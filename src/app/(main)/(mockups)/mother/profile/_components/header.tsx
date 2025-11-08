@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { TypographyLarge } from "@/components/ui/typography";
+import { TypographyLarge, TypographySmall } from "@/components/ui/typography";
 import { PenLine } from "lucide-react";
 import Link from "next/link";
 
@@ -22,8 +22,9 @@ export default function HeaderProfile() {
                     </Link>
                 </div>
             </div>
-            <div className="pl-34 pt-2 ">
+            <div className="pl-34 pt-1 leading-4">
                 <TypographyLarge className="text-base">Lorem ipsum dolor est</TypographyLarge>
+                <TypographySmall className="text-muted-foreground font-normal">Mother</TypographySmall>
             </div>
         </div>
     )

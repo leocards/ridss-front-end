@@ -27,6 +27,7 @@ export function ArkUITab({ children, activeValue, className, onValueChange }: Pr
 
 export function ArkUITabButton({
 	children,
+    className,
 	activeValue,
 	onValueChange,
 }: Props) {
@@ -36,7 +37,7 @@ export function ArkUITabButton({
 			value={activeValue}
 			onValueChange={onValueChange}
 		>
-			<Tabs.List className="relative h-full flex text-muted-foreground/80 text-sm font-medium">
+			<Tabs.List className={cn("relative h-full flex text-muted-foreground/80 text-sm font-medium", className)}>
 				{children}
 				<Tabs.Indicator className="w-[var(--width)] h-full bg-primary rounded-sm" />
 			</Tabs.List>

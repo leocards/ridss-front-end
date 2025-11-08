@@ -4,7 +4,7 @@ import SearchInput from "@/components/search-input";
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { TypographyLarge, TypographySmall } from "@/components/ui/typography";
-import { Check, ChevronLeft, ChevronRight, Ellipsis, Eye, PenLine, SlidersHorizontal } from "lucide-react";
+import { Check, ChevronLeft, ChevronRight, ChevronsLeft, ChevronsRight, Ellipsis, Eye, PenLine, SlidersHorizontal } from "lucide-react";
 import { Menubar, MenubarContent, MenubarItem, MenubarMenu, MenubarTrigger } from "@/components/ui/menubar";
 import { Fragment } from "react";
 
@@ -151,17 +151,23 @@ export default function Page({ searchParams }: Props) {
 
                     <div className="flex items-center px-4">
                         <div className="">
-                            <TypographySmall className="text-muted-foreground">10 of 50</TypographySmall>
+                            <TypographySmall className="text-muted-foreground">2 of 50</TypographySmall>
                         </div>
                         <div className="flex items-center gap-2 mt-4 ml-auto">
+                            <Button className="" variant={'outline'}>
+                                Page 1 of 5
+                            </Button>
+                            <Button size="icon" variant={'outline'}>
+                                <ChevronsLeft />
+                            </Button>
                             <Button size="icon" variant={'outline'}>
                                 <ChevronLeft />
                             </Button>
-                            <Button size="icon" variant={'default'}>1</Button>
-                            <Button size="icon" variant={'outline'}>2</Button>
-                            <Button size="icon" variant={'outline'}><Ellipsis /></Button>
                             <Button size="icon" variant={'outline'}>
                                 <ChevronRight />
+                            </Button>
+                            <Button size="icon" variant={'outline'}>
+                                <ChevronsRight />
                             </Button>
                         </div>
                     </div>

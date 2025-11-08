@@ -23,7 +23,7 @@ export default function NewRequest() {
 
     return (
         <Fragment>
-            <Button onClick={() => setOpen(true)}>
+            <Button onClick={() => setOpen(true)} className="ml-auto">
                 <Plus />
                 New Request
             </Button>

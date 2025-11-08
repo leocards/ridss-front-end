@@ -11,10 +11,10 @@ export default function EventCalendar() {
     const [isNew, setIsNew] = useState(false);
 
     return (
-        <div className="grid grow">
+        <div className="grid grow max-h -120 shadow-xs border border-border rounded-md">
             <Calendar
                 onSelectDate={() => setOpen(true)}
-                eventDates={[{ day: 12, month: 10, year: new Date().getFullYear(), inCurrentMonth: false }]}
+                eventDates={[{ day: 13, month: 10, year: new Date().getFullYear(), inCurrentMonth: false }]}
             />
 
             <Sheet open={open} onOpenChange={setOpen}>

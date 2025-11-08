@@ -2,7 +2,7 @@ import { TypographyLarge, TypographySmall } from "@/components/ui/typography";
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Menubar, MenubarContent, MenubarItem, MenubarMenu, MenubarTrigger } from "@/components/ui/menubar";
-import { Calendar, Download } from "lucide-react";
+import { Calendar, Download, Plus } from "lucide-react";
 import { eachMonthOfInterval, format } from "date-fns";
 
 export default function Page() {
@@ -22,10 +22,9 @@ export default function Page() {
     return (
         <div className="">
             <TypographyLarge>Reports</TypographyLarge>
-
             
             <div className="mt-6">
-                <div className="flex items-center gap-3">
+                <div className="flex items-center gap-3" hidden>
                     <Menubar className="p-0 shadow-none border-none w-fit">
                         <MenubarMenu>
                             <MenubarTrigger asChild>
@@ -63,14 +62,14 @@ export default function Page() {
                             <Download />
                             PDF Export
                         </Button>
-                        <Button variant="outline">
+                        <Button variant="outline" hidden>
                             <Download />
                             Excel Export
                         </Button>
                     </div>
                 </div>
 
-                <div className="mt-5">
+                <div className="mt-5" hidden>
                     <Card className="rounded-md shadow-xs border-none gap-0 p-0">
                         <div className="h-12 bg-primary text-primary-foreground boder border-primary rounded-t-[inherit] grid grid-cols-[1fr_repeat(3,10rem)] items-center [&>div]:px-4">
                             <div className=""> <TypographySmall>Activities</TypographySmall> </div>
@@ -90,6 +89,32 @@ export default function Page() {
                         </div>
                     </Card>
                 </div>
+
+                <Card className="rounded-md border-none gap-0 p-0 shadow-xs">
+                    <div className="h-12 border border-primary bg-primary text-primary-foreground rounded-t-md grid grid-cols-6 items-center [&>div]:px-4">
+                        <div className=""> <TypographySmall>Date</TypographySmall> </div>
+                        <div className=""> <TypographySmall>Transaction</TypographySmall> </div>
+                        <div className=""> <TypographySmall>Received Vials</TypographySmall> </div>
+                        <div className=""> <TypographySmall>Issued Vials</TypographySmall> </div>
+                        <div className=""> <TypographySmall>Balance</TypographySmall> </div>
+                        <div className=""> <TypographySmall>Remarks</TypographySmall> </div>
+                    </div>
+                    <div className="border border-border border-t-0 rounded-b-[inherit]">
+                        <div className="h-12 grid grid-cols-6 items-center [&>div]:px-4">
+                            <div className=""> <TypographySmall>{format(new Date(), "MMM d, y")}</TypographySmall> </div>
+                            <div className=""> <TypographySmall>Vaccine Withdrawal</TypographySmall> </div>
+                            <div className=""> <TypographySmall>40</TypographySmall> </div>
+                            <div className=""> <TypographySmall>-</TypographySmall> </div>
+                            <div className=""> <TypographySmall>40</TypographySmall> </div>
+                            <div className="flex items-center"> 
+                                <Button variant={'outline'} className="h-8">
+                                    <Plus />
+                                    Add Remarks
+                                </Button>
+                            </div>
+                        </div>
+                    </div>
+                </Card>
             </div>
         </div>
     )
