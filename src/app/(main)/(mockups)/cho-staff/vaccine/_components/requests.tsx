@@ -70,6 +70,7 @@ export default function Requests() {
 
             <div className="space-y-4">
                 <WithdrawalCard label="Approve All Request" />
+                <WithdrawalCard label="Approve All Request" />
             </div>
 
             <div className="rounded-full shadow-xs dark:shadow-white/25 size-fit mx-auto mt-5">

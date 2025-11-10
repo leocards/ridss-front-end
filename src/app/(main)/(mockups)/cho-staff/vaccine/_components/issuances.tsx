@@ -6,6 +6,7 @@ import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { TypographySmall } from "@/components/ui/typography";
 import { Menubar, MenubarContent, MenubarItem, MenubarMenu, MenubarTrigger } from "@/components/ui/menubar";
+import { cn } from "@/lib/utils";
 
 export default function Issuances() {
     return (
@@ -70,7 +71,7 @@ export default function Issuances() {
                                     <div className=""><TypographySmall>{brgy.issuer}</TypographySmall></div>    
                                     <div className="text-center"> <TypographySmall>{brgy.vials}</TypographySmall> </div>
                                     <div className="text-center"> <TypographySmall>{brgy.remain}</TypographySmall> </div>
-                                    <div className="text-center"> <TypographySmall>{brgy.status}</TypographySmall> </div>
+                                    <div className="text-center"> <TypographySmall className={cn('capitalize', colorStatus[brgy.status])}>{brgy.status}</TypographySmall> </div>
                                 </div>
                             ))}
                         </div>
@@ -81,13 +82,27 @@ export default function Issuances() {
     )
 }
 
-const brgy = [
+export const colorStatus = {
+    claimed: 'text-green-600',
+    receiving: 'text-blue-600',
+    pending: 'text-orange-600',
+} as const
+
+type BRGYTYPE = {
+    id: number;
+    brgy: string;
+    issuer: string;
+    vials: number;
+    status: 'claimed'|'receiving'|'pending';
+    remain: number;
+}
+const brgy: BRGYTYPE[] = [
     {
         id: 1,
         brgy: 'San Francisico',
         issuer: 'Mark Santino',
         vials: 15,
-        status: 'Received',
+        status: 'claimed',
         remain: 100-15
     },
     {
@@ -95,7 +110,7 @@ const brgy = [
         brgy: 'Caganguhan',
         issuer: 'Anna Rose Doe',
         vials: 13,
-        status: 'To Receive',
+        status: 'receiving',
         remain: 85-13
     },
     {
@@ -103,7 +118,7 @@ const brgy = [
         brgy: 'Gredu',
         issuer: 'Sherelmi Cruz',
         vials: 25,
-        status: 'Pending',
+        status: 'pending',
         remain: 72-25
     },
     {
@@ -111,7 +126,7 @@ const brgy = [
         brgy: 'New Visayas',
         issuer: 'Ridso Reep',
         vials: 5,
-        status: 'Pending',
+        status: 'pending',
         remain: 47-5
     },
 ]

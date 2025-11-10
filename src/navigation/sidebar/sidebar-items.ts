@@ -18,6 +18,7 @@ import {
     FileText,
     Layers,
     QrCode,
+    Building2,
 } from "lucide-react";
 
 export interface NavSubItem {
@@ -307,16 +308,16 @@ export const sidebarItems: NavGroup[] = [
             //     url: "/cho-head/vaccine-approval",
             //     icon: ReceiptText,
             // },
-            {
-                id: "/cho-head/data-verification",
-                title: "Data Verification",
-                url: "/cho-head/data-verification",
-                icon: ClipboardCheck,
-            },
+            // {
+            //     id: "/cho-head/data-verification",
+            //     title: "Data Verification",
+            //     url: "/cho-head/data-verification",
+            //     icon: ClipboardCheck,
+            // },
             {
                 id: "/cho-head/city-reports",
                 title: "City Reports",
-                url: "/cho-head/city-reports",
+                url: "/cho-head/city-reports?tab=immunization",
                 icon: ChartColumnBig,
             },
             // {
@@ -335,7 +336,7 @@ export const sidebarItems: NavGroup[] = [
                 id: "/cho-head/barangay",
                 title: "Barangay",
                 url: "/cho-head/barangay",
-                icon: ClipboardList,
+                icon: Building2,
             },
             {
                 id: "/cho-head/audit-logs",
