@@ -62,8 +62,8 @@ export default async function Page({searchParams}: Props) {
                 </div>
 
                 <div className="space-y-1.5">
-                    <Card className="p-3 rounded-md cursor-pointer border-none shadow-none bg-primary/7">
-                        <CardContent className="px-1.5 flex items-center">
+                    <Card className="p-0 gap-0 cursor-pointer border-none shadow-none bg-primary/5 divide-y divide-primary/10">
+                        <div className="flex items-center p-3 hover:bg-primary/15 rounded-t-[inherit] transition-colors">
                             <TypographySmall className="text-base">Jon Doe</TypographySmall>
                             <Button variant="ghost" className="h-7 ml-auto pointer-events-none !p-0">
                                 <div className="text-muted-foreground">
@@ -71,10 +71,8 @@ export default async function Page({searchParams}: Props) {
                                 </div>
                                 <ChevronRight />
                             </Button>
-                        </CardContent>
-                    </Card>
-                    <Card className="p-3 rounded-md cursor-pointer border-none shadow-none bg-primary/7">
-                        <CardContent className="px-1.5 flex items-center">
+                        </div>
+                        <div className="flex items-center p-3 hover:bg-primary/15 rounded-b-[inherit] transition-colors">
                             <TypographySmall className="text-base">Ann Doe</TypographySmall>
                             <Button variant="ghost" className="h-7 ml-auto pointer-events-none !p-0">
                                 <div className="text-muted-foreground">
@@ -82,7 +80,7 @@ export default async function Page({searchParams}: Props) {
                                 </div>
                                 <ChevronRight />
                             </Button>
-                        </CardContent>
+                        </div>
                     </Card>
                 </div>
 

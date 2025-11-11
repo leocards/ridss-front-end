@@ -18,7 +18,7 @@ export default function Page() {
                 <TypographySmall className="text-muted-foreground">{format(new Date, "MMMM dd, y")}</TypographySmall>
 
                 <div className="space-y-2">
-                    <Card className="p-2 relative">
+                    <Card className="p-2 relative shadow-xs">
                         <span className="absolute top-2.5 right-2.5 size-2 bg-primary rounded-full"></span>
                         <CardContent className="px-2 text-[15px]">
                             <div className="line-clamp-2 mb-3">
@@ -31,7 +31,7 @@ export default function Page() {
                             </div>
                         </CardContent>
                     </Card>
-                    <Card className="p-2">
+                    <Card className="p-2 shadow-xs">
                         <CardContent className="px-2 text-[15px]">
                             <div className="line-clamp-2 text-muted-foreground mb-3">
                                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo commodi quas quisquam provident maiores error laudantium ullam repellat quia. Quaerat dolorum iste quisquam magni quae numquam voluptas aliquid commodi harum!
@@ -39,7 +39,7 @@ export default function Page() {
                             <TypographySmall className="text-[13px] text-muted-foreground/80">{format(new Date(), "HH:mm a")}</TypographySmall>
                         </CardContent>
                     </Card>
-                    <Card className="p-2">
+                    <Card className="p-2 shadow-xs">
                         <CardContent className="px-2 text-[15px]">
                             <div className="line-clamp-2 text-muted-foreground mb-3">
                                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo commodi quas quisquam provident maiores error laudantium ullam repellat quia. Quaerat dolorum iste quisquam magni quae numquam voluptas aliquid commodi harum!

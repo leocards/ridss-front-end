@@ -121,7 +121,7 @@ export function ParentRegisterForm() {
                     label="Confirm Password"
                 />
                 
-                <Link href={`?type=parent&verification=opt`}>
+                <Link href={`?type=parent&verification=otp`}>
                     <Button className="w-full" type="submit">
                         Register
                     </Button>

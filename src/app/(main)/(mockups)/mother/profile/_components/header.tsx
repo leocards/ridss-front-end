@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { TypographyLarge, TypographySmall } from "@/components/ui/typography";
-import { PenLine } from "lucide-react";
+import { PenLine, UserRound } from "lucide-react";
 import Link from "next/link";
 
 export default function HeaderProfile() {
@@ -9,7 +9,9 @@ export default function HeaderProfile() {
             <div className="bg-blue-200/40 relative h-24 grid rounded-sm">
                 {/* Profile */}
                 <div className="rounded-full bg-background size-fit p-1.5 absolute -bottom-14 left-8">
-                    <div className="rounded-full size-20 bg-secondary"></div>
+                    <div className="rounded-full size-20 bg-secondary flex items-center justify-center">
+                        <UserRound className="size-7" />
+                    </div>
                 </div>
 
                 {/* actions */}

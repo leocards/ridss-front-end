@@ -40,7 +40,7 @@ export default function Page() {
             </div>
 
             <div className="space-y-3 mt-4">
-                <Card className="!p-3 cursor-pointer">
+                <Card className="!p-3 cursor-pointer shadow-xs">
                     <CardContent className="space-y-2 px-1">
                         <div className="flex justify-between mt-0.5">
                             <TypographySmall className="text-muted-foreground">{format(new Date, "y/M/d")}</TypographySmall>

@@ -6,7 +6,7 @@ interface Props {
 }
 export default function CancelImmunizationCard({ isCancel }: Props ) {
     return (
-        <Card className="!p-3">
+        <Card className="!p-3 shadow-xs">
             <CardContent className="space-y-2 px-1.5">
                 <div className="text-sm text-right">
                     <TypographySmall className="text-muted-foreground font-normal text-xs">2d ago</TypographySmall>

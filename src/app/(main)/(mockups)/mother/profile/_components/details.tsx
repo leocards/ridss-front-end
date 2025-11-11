@@ -6,7 +6,7 @@ import { PenLine, Plus } from "lucide-react";
 export default function ProfileDetails() {
     return (
         <div className="space-y-4">
-                <Card className="p-3">
+                <Card className="p-3 shadow-xs">
                     <CardContent className="px-3">
                         <TypographySmall className="text-muted-foreground">Personal Details</TypographySmall>
 
@@ -23,7 +23,7 @@ export default function ProfileDetails() {
                     </CardContent>
                 </Card>
 
-                <Card className="p-3">
+                <Card className="p-3 shadow-xs">
                     <CardContent className="px-3">
                         <TypographySmall className="text-muted-foreground">Address</TypographySmall>
 
@@ -38,7 +38,7 @@ export default function ProfileDetails() {
                     </CardContent>
                 </Card>
 
-                <Card className="p-3 relative">
+                <Card className="p-3 relative shadow-xs">
                     <CardContent className="px-3">
                         <Button variant="ghost" className="absolute top-1.5 right-1.5"><PenLine /> Edit</Button>
                         <TypographySmall className="text-muted-foreground">Father</TypographySmall>
@@ -53,7 +53,7 @@ export default function ProfileDetails() {
                     </CardContent>
                 </Card>
 
-                <Card className="p-3 relative">
+                <Card className="p-3 relative shadow-xs">
                     <CardContent className="px-3">
                         <Button variant="ghost" className="absolute top-1.5 right-1.5"><Plus /> Add Child</Button>
                         <TypographySmall className="text-muted-foreground">Children</TypographySmall>

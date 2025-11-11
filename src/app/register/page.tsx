@@ -1,6 +1,6 @@
 import Link from "next/link";
 
-import { Command } from "lucide-react";
+import { Building2, Command, Landmark, UserRound } from "lucide-react";
 
 import { RegisterForm } from "../(main)/auth/_components/register-form";
 import { GoogleButton } from "../(main)/auth/_components/social-auth/google-button";
@@ -67,19 +67,22 @@ export default async function Register({ searchParams }: Props) {
                         </div>
                     ) : (
                         !success && (
-                            <div className="grid grid-cols-1 gap-4">
+                            <div className="grid grid-cols-1 max-w-sm mx-auto gap-4">
                                 <Link href={"?type=parent"} className="w-full">
-                                    <Button variant="outline" className="w-full cursor-pointer">
+                                    <Button variant="outline" className="w-full h-12 cursor-pointer">
+                                        <UserRound className="size-5" />
                                         Parent Registration
                                     </Button>
                                 </Link>
                                 <Link href={"?type=bhw"} className="w-full">
-                                    <Button variant="outline" className="w-full cursor-pointer">
+                                    <Button variant="outline" className="w-full h-12 cursor-pointer">
+                                        <Building2 className="size-5" />
                                         Brangay Health Worker Registration
                                     </Button>
                                 </Link>
                                 <Link href={"?type=cho"} className="w-full">
-                                    <Button variant="outline" className="w-full cursor-pointer">
+                                    <Button variant="outline" className="w-full h-12 cursor-pointer">
+                                        <Landmark className="size-5" />
                                         City Health Office Registration
                                     </Button>
                                 </Link>
