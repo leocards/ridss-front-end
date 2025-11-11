@@ -33,14 +33,13 @@ export default function Page() {
                                     <MenubarMenu>
                                         <MenubarTrigger asChild>
                                             <Button variant="outline" className="h-8">
-                                                <span>Lorem ipsum dolor</span>
+                                                <span>Barangay Health Worker</span>
                                                 <ChevronDown className="size-4 ml-auto" />
                                             </Button>
                                         </MenubarTrigger>
                                         <MenubarContent alignOffset={0} sideOffset={1} className="min-w-44">
-                                            <MenubarItem>Lorem ipsum dolor</MenubarItem>
-                                            <MenubarItem>Lorem ipsum dolor</MenubarItem>
-                                            <MenubarItem>Lorem ipsum dolor</MenubarItem>
+                                            <MenubarItem>Barangay Health Worker</MenubarItem>
+                                            <MenubarItem>City Health Officer</MenubarItem>
                                         </MenubarContent>
                                     </MenubarMenu>
                                 </Menubar>    
@@ -50,14 +49,13 @@ export default function Page() {
                                     <MenubarMenu>
                                         <MenubarTrigger asChild>
                                             <Button variant="outline" className="h-8">
-                                                <span>Lorem ipsum dolor</span>
+                                                <span>Staff</span>
                                                 <ChevronDown className="size-4 ml-auto" />
                                             </Button>
                                         </MenubarTrigger>
                                         <MenubarContent alignOffset={0} sideOffset={1} className="min-w-44">
-                                            <MenubarItem>Lorem ipsum dolor</MenubarItem>
-                                            <MenubarItem>Lorem ipsum dolor</MenubarItem>
-                                            <MenubarItem>Lorem ipsum dolor</MenubarItem>
+                                            <MenubarItem>Staff</MenubarItem>
+                                            <MenubarItem>Head</MenubarItem>
                                         </MenubarContent>
                                     </MenubarMenu>
                                 </Menubar>    
@@ -87,14 +85,13 @@ export default function Page() {
                                     <MenubarMenu>
                                         <MenubarTrigger asChild>
                                             <Button variant="outline" className="h-8">
-                                                <span>Lorem ipsum dolor</span>
+                                                <span>Barangay Health Worker</span>
                                                 <ChevronDown className="size-4 ml-auto" />
                                             </Button>
                                         </MenubarTrigger>
                                         <MenubarContent alignOffset={0} sideOffset={1} className="min-w-44">
-                                            <MenubarItem>Lorem ipsum dolor</MenubarItem>
-                                            <MenubarItem>Lorem ipsum dolor</MenubarItem>
-                                            <MenubarItem>Lorem ipsum dolor</MenubarItem>
+                                            <MenubarItem>Barangay Health Worker</MenubarItem>
+                                            <MenubarItem>City Health Officer</MenubarItem>
                                         </MenubarContent>
                                     </MenubarMenu>
                                 </Menubar>    
@@ -104,14 +101,13 @@ export default function Page() {
                                     <MenubarMenu>
                                         <MenubarTrigger asChild>
                                             <Button variant="outline" className="h-8">
-                                                <span>Lorem ipsum dolor</span>
+                                                <span>Staff</span>
                                                 <ChevronDown className="size-4 ml-auto" />
                                             </Button>
                                         </MenubarTrigger>
                                         <MenubarContent alignOffset={0} sideOffset={1} className="min-w-44">
-                                            <MenubarItem>Lorem ipsum dolor</MenubarItem>
-                                            <MenubarItem>Lorem ipsum dolor</MenubarItem>
-                                            <MenubarItem>Lorem ipsum dolor</MenubarItem>
+                                            <MenubarItem>Staff</MenubarItem>
+                                            <MenubarItem>Head</MenubarItem>
                                         </MenubarContent>
                                     </MenubarMenu>
                                 </Menubar>    
@@ -141,14 +137,13 @@ export default function Page() {
                                     <MenubarMenu>
                                         <MenubarTrigger asChild>
                                             <Button variant="outline" className="h-8">
-                                                <span>Lorem ipsum dolor</span>
+                                                <span>Barangay Health Worker</span>
                                                 <ChevronDown className="size-4 ml-auto" />
                                             </Button>
                                         </MenubarTrigger>
                                         <MenubarContent alignOffset={0} sideOffset={1} className="min-w-44">
-                                            <MenubarItem>Lorem ipsum dolor</MenubarItem>
-                                            <MenubarItem>Lorem ipsum dolor</MenubarItem>
-                                            <MenubarItem>Lorem ipsum dolor</MenubarItem>
+                                            <MenubarItem>Barangay Health Worker</MenubarItem>
+                                            <MenubarItem>City Health Officer</MenubarItem>
                                         </MenubarContent>
                                     </MenubarMenu>
                                 </Menubar>    
@@ -158,14 +153,13 @@ export default function Page() {
                                     <MenubarMenu>
                                         <MenubarTrigger asChild>
                                             <Button variant="outline" className="h-8">
-                                                <span>Lorem ipsum dolor</span>
+                                                <span>Staff</span>
                                                 <ChevronDown className="size-4 ml-auto" />
                                             </Button>
                                         </MenubarTrigger>
                                         <MenubarContent alignOffset={0} sideOffset={1} className="min-w-44">
-                                            <MenubarItem>Lorem ipsum dolor</MenubarItem>
-                                            <MenubarItem>Lorem ipsum dolor</MenubarItem>
-                                            <MenubarItem>Lorem ipsum dolor</MenubarItem>
+                                            <MenubarItem>Staff</MenubarItem>
+                                            <MenubarItem>Head</MenubarItem>
                                         </MenubarContent>
                                     </MenubarMenu>
                                 </Menubar>    

@@ -3,15 +3,14 @@
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { TypographySmall } from "@/components/ui/typography";
-import { PenLine, Trash2,ChevronsLeft, ChevronsRight, ChevronLeft, ChevronRight, Plus } from "lucide-react";
+import { PenLine, Trash2, ChevronsLeft, ChevronsRight, ChevronLeft, ChevronRight, Plus } from "lucide-react";
+import CityReports from "../../city-reports/_components/city-reports";
 
 export default function VaccineDemand() {
+
     return (
         <div className="mt-6">
-           
-             
-          
-                <div className="">
+            <div className="">
                 <Card className="gap-0 rounded-lg p-0 shadow-xs border-none">
                     <div className="bg-primary border-primary rounded-t-[inherit] text-primary-foreground grid h-12 w-full grid-cols-[repeat(6,_1fr)_10rem] items-center border-b">
                         <TypographySmall className="px-4 text-center">Barangay</TypographySmall>
@@ -65,6 +64,7 @@ export default function VaccineDemand() {
                 </div>
             </div>
             
+            <CityReports />
         </div>
     );
 }
@@ -84,7 +84,7 @@ const vaccination = [
     {
         id: 1,
         vaccine: 'HEPATITIS B',
-         barangay: 'New Malitbog',
+        barangay: 'New Malitbog',
         target_pop: '550',
         vaccinated: '480',
         coverage_rate: '87%',
@@ -94,7 +94,7 @@ const vaccination = [
     {
         id: 1,
         vaccine: 'IPV',
-         barangay: 'Nanyo',
+        barangay: 'Nanyo',
         target_pop: '450',
         vaccinated: '400',
         coverage_rate: '89%',
@@ -104,7 +104,7 @@ const vaccination = [
     {
         id: 1,
         vaccine: 'OPV',
-         barangay: 'JP Laurel',
+        barangay: 'JP Laurel',
         target_pop: '120',
         vaccinated: '105',
         coverage_rate: '97%',

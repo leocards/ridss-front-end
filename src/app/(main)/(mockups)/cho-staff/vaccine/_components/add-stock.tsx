@@ -22,7 +22,7 @@ export default function AddStock({ vaccine }: Props) {
     
     return (
         <Fragment>
-            <Button onClick={() => setOpen(true)}> <Plus /> Add </Button>
+            <Button onClick={() => setOpen(true)} variant={'outline'} className="h-8"> <Plus /> Add </Button>
 
             <Modal open={open} onClose={setOpen}>
                 <ModalTitle>Add Stock for {vaccine.name}</ModalTitle>

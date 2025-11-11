@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useMemo } from "react";
+import React, { useEffect, useMemo, useState } from "react";
 import {
     LineChart,
     Line,
@@ -16,6 +16,7 @@ import {
 } from "recharts";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { NameType, ValueType } from "recharts/types/component/DefaultTooltipContent";
+import { Button } from "@/components/ui/button";
 
 // Define the shape of your chart data
 interface ChartDataPoint {
@@ -36,29 +37,36 @@ const COLORS = {
     confidence: "#fbbf24",
 };
 
-export default function ForecastChart(): JSX.Element {
+interface Props {
+    vaccine: string;
+}
+export default function ForecastChart({ vaccine }: Props): JSX.Element {
+    const [showForecast, setShowForecast] = useState(false)
+
     // Historical data
     const historicalData: ChartDataPoint[] = [
         { month: "Jan", actual: 40, type: "actual" },
         { month: "Feb", actual: 30, type: "actual" },
         { month: "Mar", actual: 50, type: "actual" },
         { month: "Apr", actual: 45, type: "actual" },
-        { month: "May", actual: 60, type: "actual" },
-        { month: "Jun", actual: 55, type: "actual" },
+        { month: "May", actual: 60, forecast: 60, type: "transition" },
+        // { month: "Jun", actual: 55, type: "actual" },
     ];
 
     // Forecast data with confidence intervals
     const forecastData: ChartDataPoint[] = [
-        { month: "Jun", actual: 55, forecast: 55, upper: 55, lower: 55, type: "transition" },
+        { month: "Jun", forecast: 55, upper: 55, lower: 55, type: "forecast" },
         { month: "Jul", forecast: 62, upper: 68, lower: 56, type: "forecast" },
         { month: "Aug", forecast: 65, upper: 73, lower: 57, type: "forecast" },
-        { month: "Sep", forecast: 70, upper: 80, lower: 60, type: "forecast" },
-        { month: "Oct", forecast: 75, upper: 88, lower: 62, type: "forecast" },
-        { month: "Nov", forecast: 80, upper: 95, lower: 65, type: "forecast" },
+        // { month: "Sep", forecast: 70, upper: 80, lower: 60, type: "forecast" },
+        // { month: "Oct", forecast: 75, upper: 88, lower: 62, type: "forecast" },
+        // { month: "Nov", forecast: 80, upper: 95, lower: 65, type: "forecast" },
     ];
 
+    const [chartData, setChartData] = useState<ChartDataPoint[]>([...historicalData])
+
     // Combine data for chart
-    const chartData: ChartDataPoint[] = [...historicalData, ...forecastData];
+    // const chartData: ChartDataPoint[] = [, ...forecastData];
 
     // Simple linear regression for trend
     const calculateTrend = (data: ChartDataPoint[]) => {
@@ -87,6 +95,12 @@ export default function ForecastChart(): JSX.Element {
         [chartData, slope, intercept],
     );
 
+    useEffect(() => {
+        if(showForecast) {
+            setChartData([...chartData, ...forecastData])
+        }
+    }, [showForecast])
+
     // Typed custom tooltip
     const CustomTooltip: React.FC<TooltipProps<ValueType, NameType>> = ({ active, payload, label }) => {
         if (active && payload && payload.length) {
@@ -98,7 +112,9 @@ export default function ForecastChart(): JSX.Element {
                     <p className="mb-1 text-sm font-semibold">{label}</p>
                     {payload.map((entry, index) => (
                         <p key={index} className="text-sm" style={{ color: entry.color }}>
-                            {entry.name}: {entry.value?.toLocaleString()}
+                            {(entry.payload.type == 'transition' && entry.name != "Forecast") && (<span>{entry.name}: {entry.value?.toLocaleString()}</span>)}
+                            {(entry.payload.type == 'actual' && entry.name != "Forecast") && (<span>{entry.name}: {entry.value?.toLocaleString()}</span>)}
+                            {(entry.payload.type == 'forecast' && entry.name == "Forecast") && (<span>{entry.name}: {entry.value?.toLocaleString()}</span>)}
                             {isForecast && entry.name === "Forecast" && " (predicted)"}
                         </p>
                     ))}
@@ -109,27 +125,23 @@ export default function ForecastChart(): JSX.Element {
     };
 
     return (
-        <Card className="gap-0 overflow-hidden rounded-md shadow-xs">
-            <CardHeader>
-                <CardTitle>Vaccine Forceast</CardTitle>
-                <CardDescription>Dashed line indicates predicted values</CardDescription>
+        <Card className="gap-0 overflow-hidden rounded-md shadow-xs p-3">
+            <CardHeader className="px-1 flex items-center">
+                <div className="">
+                    <CardTitle>{vaccine} Usage</CardTitle>
+                    <CardDescription>monthly usage of vaccine of year 2025</CardDescription>
+                </div>
+
+                <Button className="ml-auto" variant={'secondary'} onClick={() => setShowForecast(true)}>Show forecast</Button>
             </CardHeader>
-            <CardContent className="mt-4">
-                <ResponsiveContainer width="100%" height={300} minHeight={300}>
+            <CardContent className="mt-4 px-1 text-[15px]">
+                <ResponsiveContainer width="100%" height={200} minHeight={200}>
                     <LineChart data={dataWithTrend}>
                         <CartesianGrid strokeDasharray="3 3" stroke="#e0e0e0" />
                         <XAxis dataKey="month" />
                         <YAxis />
                         <Tooltip content={<CustomTooltip />} />
                         <Legend />
-                        <Line
-                            type="monotone"
-                            dataKey="actual"
-                            stroke={COLORS.actual}
-                            strokeWidth={2}
-                            name="Actual"
-                            dot={{ fill: COLORS.actual, r: 4 }}
-                        />
                         <Line
                             type="monotone"
                             dataKey="forecast"
@@ -141,13 +153,21 @@ export default function ForecastChart(): JSX.Element {
                         />
                         <Line
                             type="monotone"
+                            dataKey="actual"
+                            stroke={COLORS.actual}
+                            strokeWidth={2}
+                            name="Actual"
+                            dot={{ fill: COLORS.actual, r: 4 }}
+                        />
+                        {/* <Line
+                            type="monotone"
                             dataKey="trend"
                             stroke={COLORS.trend}
                             strokeWidth={1}
                             strokeDasharray="3 3"
                             name="Trend"
                             dot={false}
-                        />
+                        /> */}
                     </LineChart>
                 </ResponsiveContainer>
             </CardContent>

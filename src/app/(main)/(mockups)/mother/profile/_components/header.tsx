@@ -25,7 +25,7 @@ export default function HeaderProfile() {
                 </div>
             </div>
             <div className="pl-34 pt-1 leading-4">
-                <TypographyLarge className="text-base">Lorem ipsum dolor est</TypographyLarge>
+                <TypographyLarge className="text-base">Dianna S. Doe</TypographyLarge>
                 <TypographySmall className="text-muted-foreground font-normal">Mother</TypographySmall>
             </div>
         </div>

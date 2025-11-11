@@ -49,7 +49,7 @@ export default function Page() {
                         <TypographyLarge className="">BCG</TypographyLarge>
                         <div className="text-[15px]">
                             <div className="line-clamp-2">
-                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nemo saepe in, quisquam non mollitia aut laudantium, qui officia delectus ipsa fuga autem ducimus magni quod modi voluptatem ullam nostrum tenetur!
+                                Your child successfully completed this day's immunization.
                             </div>
                         </div>
                     </CardContent>

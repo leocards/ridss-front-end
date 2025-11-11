@@ -49,7 +49,13 @@ export default function ViewScheduleModal({ open, onClose }: Props) {
                     <div className="text-muted-foreground mb-2">Vaccination Details</div>
                     <div className="max-h-70 overflow-y-auto ml-3">
                         <div className="whitespace-pre-line break-words text-[15px]">
-                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Autem optio vel nulla doloremque, dignissimos modi, adipisci esse dolorum rerum, qui cumque iste magnam et ut obcaecati praesentium suscipit! Labore, cumque!
+                            Venue: Barangay Covered Court, Barangay San Roque, Panabo City <br />
+                            Flow of Activities: <br />
+                            • 8:00 AM – Orientation and health briefing<br />
+                            • 8:30 AM – Vaccination starts<br />
+                            • 12:00 NN – Break (minimal operations continue)<br />
+                            • 1:00 PM – Vaccination resumes<br />
+                            • 4:00 PM – Closing and final documentation<br />
                         </div>
                     </div>
                 </div>

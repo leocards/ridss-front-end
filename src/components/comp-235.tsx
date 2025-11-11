@@ -30,7 +30,7 @@ export default function Component() {
             <Label>Select Vaccine</Label>
             <MultipleSelector
                 commandProps={{
-                    label: "Select frameworks",
+                    label: "Select vaccine",
                 }}
                 defaultOptions={frameworks}
                 placeholder="Select frameworks"

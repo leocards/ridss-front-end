@@ -20,25 +20,25 @@ export default function Page() {
                             <div className=""> <TypographySmall>{format(new Date, "MM/d/y hh:mm:ss a")}</TypographySmall> </div>
                             <div className=""> <TypographySmall>John Doe</TypographySmall> </div>
                             <div className=""> <TypographySmall>Approved Request</TypographySmall> </div>
-                            <div className="line-clamp-1"> <TypographySmall>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam quidem enim repellendus, mollitia alias cum eos cupiditate. Illo qui accusamus explicabo, in rem accusantium, cumque delectus beatae earum ipsa quisquam.</TypographySmall> </div>
+                            <div className="line-clamp-1"> <TypographySmall>You approved vaccine request of barangay New Visayas</TypographySmall> </div>
                         </div>
                         <div className="min-h-11 grid grid-cols-[13rem_1fr_10rem_1fr] items-center [&>div]:px-4">
                             <div className=""> <TypographySmall>{format(new Date, "MM/d/y hh:mm:ss a")}</TypographySmall> </div>
                             <div className=""> <TypographySmall>John Doe</TypographySmall> </div>
                             <div className="leading-4"> <TypographySmall>Added Vaccine Stock</TypographySmall> </div>
-                            <div className="line-clamp-1"> <TypographySmall>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam quidem enim repellendus, mollitia alias cum eos cupiditate. Illo qui accusamus explicabo, in rem accusantium, cumque delectus beatae earum ipsa quisquam.</TypographySmall> </div>
+                            <div className="line-clamp-1"> <TypographySmall>You added stock for BCG, IPV, OPV, HEPA B vaccines.</TypographySmall> </div>
                         </div>
                         <div className="min-h-11 grid grid-cols-[13rem_1fr_10rem_1fr] items-center [&>div]:px-4">
                             <div className=""> <TypographySmall>{format(new Date, "MM/d/y hh:mm:ss a")}</TypographySmall> </div>
                             <div className=""> <TypographySmall>John Doe</TypographySmall> </div>
                             <div className="leading-4"> <TypographySmall>Updated Vaccine Details</TypographySmall> </div>
-                            <div className="line-clamp-1"> <TypographySmall>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam quidem enim repellendus, mollitia alias cum eos cupiditate. Illo qui accusamus explicabo, in rem accusantium, cumque delectus beatae earum ipsa quisquam.</TypographySmall> </div>
+                            <div className="line-clamp-1"> <TypographySmall>You updated the dosage of BCG vaccine.</TypographySmall> </div>
                         </div>
                         <div className="min-h-11 grid grid-cols-[13rem_1fr_10rem_1fr] items-center [&>div]:px-4">
                             <div className=""> <TypographySmall>{format(new Date, "MM/d/y hh:mm:ss a")}</TypographySmall> </div>
                             <div className=""> <TypographySmall>John Doe</TypographySmall> </div>
                             <div className=""> <TypographySmall>Approved Request</TypographySmall> </div>
-                            <div className="line-clamp-1"> <TypographySmall>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam quidem enim repellendus, mollitia alias cum eos cupiditate. Illo qui accusamus explicabo, in rem accusantium, cumque delectus beatae earum ipsa quisquam.</TypographySmall> </div>
+                            <div className="line-clamp-1"> <TypographySmall>You approved vaccine request of barangay New Malitbog</TypographySmall> </div>
                         </div>
                     </div>
                 </Card>

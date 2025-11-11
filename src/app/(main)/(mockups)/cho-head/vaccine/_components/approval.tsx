@@ -4,19 +4,20 @@ import { Check, X } from "lucide-react";
 import { TypographySmall } from "@/components/ui/typography";
 import TransactionTabs from "../../../bhw-head/vaccine/_components/tansaction-tabs";
 import { TooltipComponent } from "@/components/ui/tooltip";
+import WithdrawalCard from "./withdrawal-card";
 
 export default function Approval() {
     return (
         <div className="mt-6">
-            <div className="mb-3 px-4">
+            {/* <div className="mb-3 px-4">
                 <TransactionTabs />
-            </div>
+            </div> */}
 
             <div className="">
-
+                <WithdrawalCard label="Vaccine Claimed" />
             </div>
 
-            <Card className="rounded-md shadow-xs gap-0 p-0 border-none overflow-hidden">
+            {/* <Card className="rounded-md shadow-xs gap-0 p-0 border-none overflow-hidden">
                 <div className="h-12 bg-primary border border-b-0 border-primary text-primary-foreground rounded-t-[inherit] grid grid-cols-8 [&>div:nth-child(-n+2)]:col-span-2 items-center [&>div]:pl-4">
                     <div className="">
                         <TypographySmall>Brgy.</TypographySmall>
@@ -70,7 +71,7 @@ export default function Approval() {
                         </div>
                     ))}
                 </div>
-            </Card>
+            </Card> */}
 
             <div className="rounded-full shadow-xs dark:shadow-white/25 size-fit mx-auto mt-5">
                 <div className="rounded full shadow-inner shadow-zinc-300/80 dark:shadow-white/25 size-2"></div>

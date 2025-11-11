@@ -15,10 +15,11 @@ export default async function Immunization({ searchParams }: Props) {
 
             <div className="mt-6">
                 <div className="">
-                    <ImmunizationTab tab={tab} />
+                    {/* <ImmunizationTab tab={tab} /> */}
                 </div>
 
-                {tab === 'verify' && (<Verification />)}
+                {/* {tab === 'verify' && (<Verification />)} */}
+                <Verification />
             </div>
         </div>
     )

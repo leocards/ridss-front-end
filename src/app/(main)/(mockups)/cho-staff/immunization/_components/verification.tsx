@@ -11,8 +11,8 @@ export default function Verification() {
             <Card className="shadow-xs rounded-md gap-0 p-0 border-none">
                 <div className="h-12 bg-primary text-primary-foreground border border-primary rounded-t-[inherit] grid grid-cols-6 items-center [&>div]:px-4">
                     <div className="col-span-2"> <TypographySmall>Barangay</TypographySmall> </div>
-                    <div className=""> <TypographySmall>Present</TypographySmall> </div>
-                    <div className=""> <TypographySmall>Absent</TypographySmall> </div>
+                    <div className=""> <TypographySmall>Vaccinated</TypographySmall> </div>
+                    <div className=""> <TypographySmall>Missed</TypographySmall> </div>
                     <div className="col-span-2"></div>
                 </div>
                 <div className="rounded-b-[inherit] border border-border divide-y divide-border">

@@ -53,29 +53,29 @@ export const BarangayCard = ({brgy}:{
                 <div className="pb-0 p-3"><TypographySmall className="text-[15px]">{brgy}</TypographySmall></div>
                 <div className="h-12 grid grid-cols-[1fr_repeat(4,_10rem)] items-center [&>div]:px-4">
                     <div className=""> <TypographySmall>Vaccine</TypographySmall> </div>
-                    <div className="text-center"> <TypographySmall>Qty</TypographySmall> </div>
-                    <div className="text-center"> <TypographySmall>Remaining</TypographySmall> </div>
-                    <div className="text-center"> <TypographySmall>Opened</TypographySmall> </div>
-                    <div className="text-center"> <TypographySmall>Used</TypographySmall> </div>
+                    <div className="text-center"> <TypographySmall>Vials</TypographySmall> </div>
+                    <div className="text-center"> <TypographySmall>Remaining Vials</TypographySmall> </div>
+                    <div className="text-center"> <TypographySmall>Opened Vials</TypographySmall> </div>
+                    <div className="text-center"> <TypographySmall>Used Vials</TypographySmall> </div>
                 </div>
             </div>
             <div className="border border-border border-t-0 divide-y divide-border rounded-b-[inherit]">
                 <div className="h-12 grid grid-cols-[1fr_repeat(4,_10rem)] items-center [&>div]:px-4">
-                    <div className=""> <TypographySmall>Lorem Ipsum</TypographySmall> </div>
+                    <div className=""> <TypographySmall>BCG</TypographySmall> </div>
                     <div className="text-center"> <TypographySmall>4</TypographySmall> </div>
                     <div className="text-center"> <TypographySmall>1</TypographySmall> </div>
                     <div className="text-center"> <TypographySmall>0</TypographySmall> </div>
                     <div className="text-center"> <TypographySmall>3</TypographySmall> </div>
                 </div>
                 <div className="h-12 grid grid-cols-[1fr_repeat(4,_10rem)] items-center [&>div]:px-4">
-                    <div className=""> <TypographySmall>Lorem Ipsum</TypographySmall> </div>
+                    <div className=""> <TypographySmall>HEAPA B</TypographySmall> </div>
                     <div className="text-center"> <TypographySmall>6</TypographySmall> </div>
                     <div className="text-center"> <TypographySmall>0</TypographySmall> </div>
                     <div className="text-center"> <TypographySmall>0</TypographySmall> </div>
                     <div className="text-center"> <TypographySmall>6</TypographySmall> </div>
                 </div>
                 <div className="h-12 grid grid-cols-[1fr_repeat(4,_10rem)] items-center [&>div]:px-4">
-                    <div className=""> <TypographySmall>Lorem Ipsum</TypographySmall> </div>
+                    <div className=""> <TypographySmall>IPV</TypographySmall> </div>
                     <div className="text-center"> <TypographySmall>4</TypographySmall> </div>
                     <div className="text-center"> <TypographySmall>0</TypographySmall> </div>
                     <div className="text-center"> <TypographySmall>0</TypographySmall> </div>

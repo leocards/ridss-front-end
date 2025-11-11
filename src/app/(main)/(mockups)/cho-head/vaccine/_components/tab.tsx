@@ -19,6 +19,7 @@ export default function VaccineTab({ tab }: Props) {
             router.push('?tab='+value)
             setActive(value as typeof tab)
         }} className="gap-2">
+            
             <ArkUITabItem value="inventory" className={cn(active === "inventory" ? "text-primary-foreground" : "hover:text-foreground")}>
                 <span className="relative z-10">Inventory</span>
             </ArkUITabItem>

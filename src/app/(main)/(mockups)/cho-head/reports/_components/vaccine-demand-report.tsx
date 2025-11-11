@@ -3,7 +3,8 @@
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { TypographySmall } from "@/components/ui/typography";
-import { PenLine, Trash2, ChevronsLeft, ChevronsRight, ChevronLeft, ChevronRight, Plus } from "lucide-react";
+import { ChevronsLeft, ChevronsRight, ChevronLeft, ChevronRight, Plus } from "lucide-react";
+import ForecastChart from "./forecast";
 
 export default function VaccineDemand() {
     return (
@@ -69,7 +70,14 @@ export default function VaccineDemand() {
                     </div>
                 </div>
             </div>
-
+            
+            <div className="grid grid-cols-2 gap-3 mt-6">
+                <ForecastChart vaccine="BCG" />
+                <ForecastChart vaccine="Pentavalent" />
+                <ForecastChart vaccine="HEAP B" />
+                <ForecastChart vaccine="IPV" />
+                <ForecastChart vaccine="OPV" />
+            </div>
         </div>
     );
 }

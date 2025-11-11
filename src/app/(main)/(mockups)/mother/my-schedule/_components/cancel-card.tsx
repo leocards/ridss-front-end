@@ -32,7 +32,7 @@ export default function CancelImmunizationCard({ isCancel }: Props ) {
 
                     {isCancel && (<div className="text-sm">
                         <div className="">Reason:</div>
-                        <div className="italic line-clamp-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Est ut error qui ab quam facere. Sequi, dignissimos ex dolorum consectetur eius ab, quos voluptatibus itaque ipsam officia, recusandae odio ea.</div>
+                        <div className="italic line-clamp-3">My Child experienced fever just this week</div>
                     </div>)}
                 </div>
             </CardContent>

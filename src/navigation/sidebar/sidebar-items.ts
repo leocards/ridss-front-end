@@ -314,16 +314,16 @@ export const sidebarItems: NavGroup[] = [
             //     url: "/cho-head/data-verification",
             //     icon: ClipboardCheck,
             // },
-            {
-                id: "/cho-head/city-reports",
-                title: "City Reports",
-                url: "/cho-head/city-reports?tab=immunization",
-                icon: ChartColumnBig,
-            },
+            // {
+            //     id: "/cho-head/city-reports",
+            //     title: "City Reports",
+            //     url: "/cho-head/city-reports?tab=immunization",
+            //     icon: ChartColumnBig,
+            // },
             {
                 id: "/cho-head/reports",
                 title: "Reports",
-                url: "/cho-head/reports?tab=vaccine Demand",
+                url: "/cho-head/reports?tab=verification",
                 icon: ChartColumnBig,
             },
             // {

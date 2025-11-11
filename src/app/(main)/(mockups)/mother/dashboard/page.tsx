@@ -94,7 +94,7 @@ export default async function Page({searchParams}: Props) {
                                 <div className="grid">
                                     <div className="text-[15px] dark:text-zinc-300">
                                         <div className="line-clamp-1">
-                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae labore, eaque ea modi officia sed consequatur numquam porro neque velit molestias vel veniam impedit dolorem! Iure reiciendis libero cumque dolorem?
+                                            You child is scheduled for immunization on November 14, 2025
                                         </div>
                                     </div>
                                     <TypographySmall className="text-xs ml-auto mt-3">Just now</TypographySmall>
@@ -107,7 +107,7 @@ export default async function Page({searchParams}: Props) {
                                 <div className="grid">
                                     <div className="text-[15px] text-muted-foreground">
                                         <div className="line-clamp-1">
-                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae labore, eaque ea modi officia sed consequatur numquam porro neque velit molestias vel veniam impedit dolorem! Iure reiciendis libero cumque dolorem?
+                                            You child is scheduled for immunization on November 14, 2025
                                         </div>
                                     </div>
                                     <TypographySmall className="text-xs ml-auto mt-3 text-muted-foreground">3d</TypographySmall>
@@ -120,7 +120,7 @@ export default async function Page({searchParams}: Props) {
                                 <div className="grid">
                                     <div className="text-[15px] text-muted-foreground">
                                         <div className="line-clamp-1">
-                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae labore, eaque ea modi officia sed consequatur numquam porro neque velit molestias vel veniam impedit dolorem! Iure reiciendis libero cumque dolorem?
+                                            You child is scheduled for immunization on November 14, 2025
                                         </div>
                                     </div>
                                     <TypographySmall className="text-xs ml-auto mt-3 text-muted-foreground">4w</TypographySmall>

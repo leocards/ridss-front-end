@@ -22,10 +22,10 @@ export default function Page() {
                         <span className="absolute top-2.5 right-2.5 size-2 bg-primary rounded-full"></span>
                         <CardContent className="px-2 text-[15px]">
                             <div className="line-clamp-2 mb-3">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo commodi quas quisquam provident maiores error laudantium ullam repellat quia. Quaerat dolorum iste quisquam magni quae numquam voluptas aliquid commodi harum!
+                                You child is scheduled for immunization tommorrow November 14, 2025.
                             </div>
                             <div className="flex justify-between">
-                                <TypographySmall className="text-[13px]">{format(new Date(), "HH:mm a")}</TypographySmall>
+                                <TypographySmall className="text-[13px]">{format(new Date(), "hh:mm a")}</TypographySmall>
 
                                 <span className="text-xs hover:underline cursor-pointer">Mark as read</span>
                             </div>
@@ -34,7 +34,7 @@ export default function Page() {
                     <Card className="p-2 shadow-xs">
                         <CardContent className="px-2 text-[15px]">
                             <div className="line-clamp-2 text-muted-foreground mb-3">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo commodi quas quisquam provident maiores error laudantium ullam repellat quia. Quaerat dolorum iste quisquam magni quae numquam voluptas aliquid commodi harum!
+                                You child is scheduled for immunization tommorrow September 14, 2025.
                             </div>
                             <TypographySmall className="text-[13px] text-muted-foreground/80">{format(new Date(), "HH:mm a")}</TypographySmall>
                         </CardContent>
@@ -42,7 +42,7 @@ export default function Page() {
                     <Card className="p-2 shadow-xs">
                         <CardContent className="px-2 text-[15px]">
                             <div className="line-clamp-2 text-muted-foreground mb-3">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo commodi quas quisquam provident maiores error laudantium ullam repellat quia. Quaerat dolorum iste quisquam magni quae numquam voluptas aliquid commodi harum!
+                                You child is scheduled for immunization tommorrow August 14, 2025.
                             </div>
                             <TypographySmall className="text-[13px] text-muted-foreground/80">{format(new Date(), "HH:mm a")}</TypographySmall>
                         </CardContent>

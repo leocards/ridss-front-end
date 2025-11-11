@@ -1,4 +1,4 @@
-import { TypographyLarge } from "@/components/ui/typography"
+import { TypographyLarge, TypographySmall } from "@/components/ui/typography"
 import { Card, CardContent } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
 import { PenLine, Plus, Trash2 } from "lucide-react"
@@ -17,11 +17,25 @@ export default function EventList({ onClickNew }: Props) {
             </div>
 
             <div className="space-y-3">
-                {Array.from({ length: 3 }).map((_, index) => (
-                    <Card className="p-2 shadow-xs rounded-md" key={index}>
+                <Card className="p-2 shadow-xs rounded-md">
                         <CardContent className="px-1">
                             <div className="">
-                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nesciunt, non neque et voluptatum delectus illum esse amet hic eligendi sit voluptates qui excepturi ipsa exercitationem voluptatem, numquam quis. Dolor, placeat.
+                                <TypographySmall className="text-base">Bakuna Para sa Bayan: Community Vaccination Drive</TypographySmall>
+                                <div className="">
+                                    <div className="flex">
+                                        <div className="text-sm text-muted-foreground w-20 shrink-0">Date: </div>
+                                        <div className="ml-4">March 22, 2025</div>
+                                    </div>
+                                    <div className="flex mb-4">
+                                        <div className="text-sm text-muted-foreground w-20 shrink-0">Time: </div>
+                                        <div className="ml-4">8:00 AM to 4:00 PM</div>
+                                    </div>
+
+                                    <div className="text-sm text-muted-foreground w-40 shrink-0">Venue: </div>
+                                    <div className="ml-4">Barangay Covered Court, Barangay San Roque, Panabo City</div>
+                                    <div className="text-sm text-muted-foreground w-40 shrink-0">Target Beneficiaries: </div>
+                                    <div className="ml-4">Infants, toddlers, pregnant women, and adults needing booster shots</div>
+                                </div>
                             </div>
 
                             <div className="flex justify-end items-center gap-2 mt-3">
@@ -36,7 +50,6 @@ export default function EventList({ onClickNew }: Props) {
                             </div>
                         </CardContent>
                     </Card>
-                ))}
             </div>
 
             <div className="rounded-full shadow-xs dark:shadow-white/25 size-fit mx-auto mt-5">
