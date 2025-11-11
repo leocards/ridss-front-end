@@ -320,6 +320,12 @@ export const sidebarItems: NavGroup[] = [
                 url: "/cho-head/city-reports?tab=immunization",
                 icon: ChartColumnBig,
             },
+            {
+                id: "/cho-head/reports",
+                title: "Reports",
+                url: "/cho-head/reports?tab=vaccine Demand",
+                icon: ChartColumnBig,
+            },
             // {
             //     id: "/cho-head/inventory-oversight",
             //     title: "Inventory Oversight",
