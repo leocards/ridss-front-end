@@ -50,7 +50,7 @@ export default function Page() {
                     <div className="border-border flex h-13 shrink-0 items-center justify-between border-b px-3.5">
                         <TypographySmall className="text-base font-bold">Pending Registration</TypographySmall>
 
-                        <TypographySmall className="font-normal">Total: 10</TypographySmall>
+                        <TypographySmall className="text-xs text-muted-foreground ml-1">Total: 10</TypographySmall>
                     </div>
                     <OverlayScrollbar className="h-full">
                         <div className="divide-y divide-border">
@@ -135,7 +135,7 @@ export default function Page() {
                                 </TypographySmall>
 
                                 <div className="mt-3 space-y-2">
-                                    {Array.from({length:4}).map((_, index) => (
+                                    {Array.from({ length: 4 }).map((_, index) => (
                                         <Card key={index} className="grid grid-cols-[1fr_repeat(5,7rem)] h-12 gap-0 rounded-sm p-0 shadow-xs overflow-hidden">
                                             <div className="p-2.5 flex items-center gap-3">
                                                 <div className="flex items-center justify-center gap-1">
@@ -198,14 +198,14 @@ export default function Page() {
 }
 
 const pendingRegistrations = [
-  { id: 1, name: "Jasmine Dela Cruz", status: "pending" },
-  { id: 2, name: "Marco Villanueva", status: "pending" },
-  { id: 3, name: "Lara Mendoza", status: "pending" },
-  { id: 4, name: "Ramon Castillo", status: "pending" },
-  { id: 5, name: "Faith Alonzo", status: "pending" },
-  { id: 6, name: "Daniel Roxas", status: "pending" },
-  { id: 7, name: "Mika Santos", status: "pending" },
-  { id: 8, name: "Jorel Vergara", status: "pending" },
-  { id: 9, name: "Celine Marquez", status: "pending" },
-  { id: 10, name: "Arvin Soriano", status: "pending" }
+    { id: 1, name: "Jasmine Dela Cruz", status: "pending" },
+    { id: 2, name: "Marco Villanueva", status: "pending" },
+    { id: 3, name: "Lara Mendoza", status: "pending" },
+    { id: 4, name: "Ramon Castillo", status: "pending" },
+    { id: 5, name: "Faith Alonzo", status: "pending" },
+    { id: 6, name: "Daniel Roxas", status: "pending" },
+    { id: 7, name: "Mika Santos", status: "pending" },
+    { id: 8, name: "Jorel Vergara", status: "pending" },
+    { id: 9, name: "Celine Marquez", status: "pending" },
+    { id: 10, name: "Arvin Soriano", status: "pending" }
 ];

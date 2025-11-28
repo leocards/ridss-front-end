@@ -61,10 +61,7 @@ export function AccountSwitcher({
             <BadgeCheck />
             Account
           </DropdownMenuItem>
-          <DropdownMenuItem>
-            <CreditCard />
-            Billing
-          </DropdownMenuItem>
+
           <DropdownMenuItem>
             <Bell />
             Notifications

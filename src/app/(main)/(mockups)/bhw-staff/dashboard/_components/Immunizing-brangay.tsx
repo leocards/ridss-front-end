@@ -11,7 +11,9 @@ export default function ImmunizingBarangay() {
     return (
         <div className=" rounded-md border border-border p-3">
             <div className="mb-2">
-                <TypographySmall className="text-[15px]">Current Immunization</TypographySmall>
+                <TypographySmall className="text-[15px]">Stock Availability <span className="text-xs text-muted-foreground ml-1">
+                    (Number of vaccine vials available for immunization)
+                </span></TypographySmall>
             </div>
             <Card className="col-span-full rounded-md shadow-xs overflow-hidden border-none p-0 gap-0">
                 <div className="h-12 grid grid-cols-6 items-center [&>div]:px-4 bg-primary border border-primary text-primary-foreground rounded-t-md">
@@ -49,7 +51,7 @@ const ImmunizingBarangayCard = ({ brgy }: ImmunizingBarangayCardProps) => {
 
     return (
         <div className="min-h-12 grid grid-cols-6 items-center [&>div]:not-first:px-4">
-            <div className="col-span-2"> 
+            <div className="col-span-2">
                 <div className="h-12 flex items-center justify-between px-4 hover:bg-secondary cursor-pointer" onClick={() => setOpen(!open)}>
                     <div className="flex items-center gap-2">
                         <span className="relative flex size-3 shrink-0">
@@ -64,7 +66,7 @@ const ImmunizingBarangayCard = ({ brgy }: ImmunizingBarangayCardProps) => {
                     {open && (
                         <motion.div
                             initial={{ height: 0 }}
-                            animate={{ height: 'auto'}}
+                            animate={{ height: 'auto' }}
                             exit={{ height: 0 }}
                             transition={{
                                 type: "keyframes",
@@ -93,26 +95,26 @@ const barangaysVials = [
     {
         id: 1,
         brgy: { name: 'New Malitbog', contactPerson: 'Anna Rose Doe', contactNumber: '09955826473' },
-        vaccines: [ { stock: 10 },{ stock: 15 },{ stock: 20 },{ stock: 33 } ]
+        vaccines: [{ stock: 10 }, { stock: 15 }, { stock: 20 }, { stock: 33 }]
     },
     {
         id: 2,
         brgy: { name: 'New Pandan', contactPerson: 'Lara Mendoza', contactNumber: '09955826473' },
-        vaccines: [ { stock: 10 },{ stock: 25 },{ stock: 23 },{ stock: 24 } ]
+        vaccines: [{ stock: 10 }, { stock: 25 }, { stock: 23 }, { stock: 24 }]
     },
     {
         id: 3,
         brgy: { name: 'New Visayas', contactPerson: 'Daniel Roxas', contactNumber: '09955826473' },
-        vaccines: [ { stock: 17 },{ stock: 13 },{ stock: 20 },{ stock: 33 } ]
+        vaccines: [{ stock: 17 }, { stock: 13 }, { stock: 20 }, { stock: 33 }]
     },
     {
         id: 4,
         brgy: { name: 'Southern Davao', contactPerson: 'Celine Marquez', contactNumber: '09955826473' },
-        vaccines: [ { stock: 21 },{ stock: 18 },{ stock: 22 },{ stock: 46 } ]
+        vaccines: [{ stock: 21 }, { stock: 18 }, { stock: 22 }, { stock: 46 }]
     },
     {
         id: 5,
         brgy: { name: 'Maduao', contactPerson: 'Jasmine Dela Cruz', contactNumber: '09955826473' },
-        vaccines: [ { stock: 22 },{ stock: 29 },{ stock: 20 },{ stock: 33 } ]
+        vaccines: [{ stock: 22 }, { stock: 29 }, { stock: 20 }, { stock: 33 }]
     },
 ]

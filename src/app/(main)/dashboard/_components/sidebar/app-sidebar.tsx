@@ -72,16 +72,16 @@ export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
     const pathname = usePathname()
 
     const navigationTabs = useMemo(() => {
-        if(selectedUser) {
+        if (selectedUser) {
             return sidebarItems.filter((tabs) => tabs.id === selectedUser.id)
         }
         return []
     }, [selectedUser])
 
     useEffect(() => {
-        if(!selectedUser) {
-            const activeUser = ridsUsers.find((u) => pathname.startsWith('/'+u.role))
-            if(activeUser)
+        if (!selectedUser) {
+            const activeUser = ridsUsers.find((u) => pathname.startsWith('/' + u.role))
+            if (activeUser)
                 setSelectedUser(activeUser)
         }
     }, [selectedUser])
@@ -100,8 +100,16 @@ export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
                                             <span className="text-base font-semibold">{APP_CONFIG.name}</span>
                                         </Link> */}
                                         <Button variant={'outline'} className="h-10">
-                                            <UserRound/>
-                                            <span className="mr-auto" hidden={isCollapsed === 'collapsed'}>{selectedUser?.name}</span>
+                                            <UserRound />
+                                            <span
+                                                className="mr-auto"
+                                                hidden={isCollapsed === 'collapsed'}
+                                            >
+                                                {selectedUser?.name}
+                                                <span className="text-xs text-muted-foreground ml-1">
+                                                    {selectedUser?.role}
+                                                </span>
+                                            </span>
                                             <ChevronDown className={cn(isCollapsed === 'collapsed' && 'hidden')} />
                                         </Button>
                                     </SidebarMenuButton>
