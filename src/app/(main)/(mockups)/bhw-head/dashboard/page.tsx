@@ -15,7 +15,7 @@ export default function Page() {
     return (
         <div className="">
             <TypographyLarge>Dashboard</TypographyLarge>
-            <div className="grid grid-cols-[repeat(auto-fill,_minmax(15rem,_1fr))] gap-4 mt-5">
+<div className="grid grid-cols-[repeat(auto-fill,_minmax(15rem,_1fr))] gap-4 mt-5">
                 <Card className="shadow-xs rounded-sm h-22 p-3 gap-0">
                     <TypographySmall className="font-semibold">Upcoming Immunization</TypographySmall>
                     <TypographyH2 className="mt-3">6</TypographyH2>
