@@ -7,7 +7,18 @@ export const users = [
         avatar: "/avatars/arhamkhnz.png",
         role: "administrator",
     },
+<<<<<<< HEAD
 
+=======
+    // {
+    //     id: "2",
+    //     name: "Ammar Khan",
+    //     username: "ammarkhnz",
+    //     email: "hello@ammarkhnz.com",
+    //     avatar: "",
+    //     role: "admin",
+    // },
+>>>>>>> 325820f0b4289ba50933f2aa2dabe893c53b154a
 ];
 
 export const ridsUsers: ridsUserType[] = [

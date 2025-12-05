@@ -14,6 +14,7 @@ import {
   DropdownMenuGroup,
 } from "@/components/ui/dropdown-menu";
 import { cn, getInitials } from "@/lib/utils";
+import Link from "next/link";
 
 export function AccountSwitcher({
   users,
@@ -61,17 +62,22 @@ export function AccountSwitcher({
             <BadgeCheck />
             Account
           </DropdownMenuItem>
+<<<<<<< HEAD
 
+=======
+>>>>>>> 325820f0b4289ba50933f2aa2dabe893c53b154a
           <DropdownMenuItem>
             <Bell />
             Notifications
           </DropdownMenuItem>
         </DropdownMenuGroup>
         <DropdownMenuSeparator />
-        <DropdownMenuItem>
+        <Link href={'/login'}>
+          <DropdownMenuItem>
           <LogOut />
           Log out
         </DropdownMenuItem>
+        </Link>
       </DropdownMenuContent>
     </DropdownMenu>
   );
